@@ -26,8 +26,8 @@ Route::post('/post/add-comment', [\App\Http\Controllers\User\CommentController::
 Route::post('save-likedislike',[\App\Http\Controllers\User\PostController::class, 'save_likedislike']);
 Route::post('check-likedislike',[\App\Http\Controllers\User\PostController::class, 'check_likedislike']);
 
-
-Route::group(['prefix' => 'boomee', 'middleware' => ['admin', 'auth']], function(){
+// , 'middleware' => ['admin', 'auth']
+Route::group(['prefix' => 'admin'], function(){
     Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('admin.index');
 
     Route::get('/comments', [\App\Http\Controllers\Admin\CommentController::class, 'index'])->name('admin.comments.index');
@@ -57,11 +57,3 @@ Route::group(['prefix' => 'boomee', 'middleware' => ['admin', 'auth']], function
 
 \Illuminate\Support\Facades\Auth::routes();
 
-//[
-//    'login'    => true,
-//    'logout'   => true,
-//    'register' => false,
-//    'reset'    => false,
-//    'confirm'  => false,
-//    'verify'   => false,
-//]

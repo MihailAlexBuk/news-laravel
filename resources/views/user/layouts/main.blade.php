@@ -6,16 +6,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Cloapedia - Stylish Magazine Blog Template</title>
+    <title>News</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="{{asset('assets/images/apple-touch-icon.png')}}">
-
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
 
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/font-awesome.min.css')}}" rel="stylesheet">
@@ -122,7 +116,7 @@
     <div class="col-lg-12 hidden-md-down mt-5">
         <div class="topmenu text-center">
             <a class="nav-link color-red-hover" href="/">
-                <h1>SITE_NAME</h1>
+                <h1>NEWS</h1>
             </a>
         </div><!-- end topmenu -->
     </div><!-- end col -->
@@ -235,7 +229,7 @@
                                         <button type="submit" class="btn btn-primary">Подписаться <i class="fa fa-envelope-open-o"></i></button>
                                     </form>
                                 </div><!-- end newsletter -->
-                                <p>Cloapedia is a personal blog for handcrafted, cameramade photography content, fashion styles from independent creatives around the world.</p>
+                                <p>Что бы быть всегда в курсе новостей вы можете Подписаться на нас</p>
                                 <div class="social">
                                     <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
                                     <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -247,7 +241,7 @@
                         </div><!-- end widget -->
                     </div><!-- end col -->
                     <br>
-                    <div class="copyright">&copy; Cloapedia. Design: <a href="http://html.design">HTML Design</a>.</div>
+                    <div class="copyright">&copy; 2023</a>.</div>
                 </div>
             </div>
         </div><!-- end container -->

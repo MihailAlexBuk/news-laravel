@@ -35,14 +35,17 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <li class="nav-item ">
-            <a href="/" class='btn btn-outline-primary' type="submit">Вернутся</a>
+            <a href="/" class='btn btn-outline-primary' type="submit">Вернуться</a>
         </li>
-        <li class="nav-item ml-2">
-            <form action="{{route('logout')}}" method="POST">
-                @csrf
-                <input class='btn btn-outline-danger' type="submit" value="Выйти">
-            </form>
-        </li>
+        @auth
+            <li class="nav-item ml-2">
+                <form action="{{route('logout')}}" method="POST">
+                    @csrf
+                    <input class='btn btn-outline-danger' type="submit" value="Выйти">
+                </form>
+            </li>
+        @endauth
+
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -81,7 +84,7 @@
                           <p>Комментарии</p>
                       </a>
                   </li>
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                       <a href="{{route('admin.likes.index')}}" class="nav-link">
                           <i class="nav-icon fas fa-heart"></i>
                           <p>Лайки</p>
@@ -92,7 +95,7 @@
                           <i class="nav-icon fas fa-eye"></i>
                           <p>Просмотры</p>
                       </a>
-                  </li>
+                  </li> --}}
                   <li class="nav-item">
                       <a href="{{route('categories.index')}}" class="nav-link">
                           <i class="nav-icon fas fa-list"></i>

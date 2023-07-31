@@ -13,15 +13,8 @@ class RIA
 {
     public static function index()
     {
-//        $process = new Process(['python3', __DIR__.'/ria.py', __DIR__]);
-//        $process->run();
-//
-//        if (!$process->isSuccessful()) {
-//            throw new ProcessFailedException($process);
-//        }
-//        echo $process->getOutput();
-
         self::data('world');
+        self::data('politics');
     }
 
     public static function categories($category)
@@ -35,7 +28,7 @@ class RIA
 
     public static function data($category_file)
     {
-        $data = file_get_contents(__DIR__."/data/".$category_file.".json");
+        $data = file_get_contents(__DIR__."./data/".$category_file.".json");
         $objects = json_decode($data, true);
 
         foreach ($objects as $object)
